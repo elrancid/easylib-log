@@ -1,0 +1,13 @@
+/**
+ * This abstract class used for module building by extending this class
+ * prevents importing the module into somewhere else than root App Module.
+ */
+export class EnsureImportedOnceModule {
+    constructor(targetModule) {
+        if (targetModule) {
+            throw new Error(`${targetModule.constructor.name} has already been loaded.
+      You should only import Core modules in the AppModule only.`);
+        }
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW5zdXJlLWltcG9ydGVkLW9uY2UubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Ii4uLy4uLy4uLy4uL3Byb2plY3RzL2Vhc3lsaWIvY29yZS9zcmMvIiwic291cmNlcyI6WyJsaWIvZW5zdXJlLWltcG9ydGVkLW9uY2UubW9kdWxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7R0FHRztBQUNILE1BQU0sT0FBZ0Isd0JBQXdCO0lBQzVDLFlBQXNCLFlBQWlCO1FBQ3JDLElBQUksWUFBWSxFQUFFO1lBQ2hCLE1BQU0sSUFBSSxLQUFLLENBQUMsR0FBRyxZQUFZLENBQUMsV0FBVyxDQUFDLElBQUk7aUVBQ1csQ0FBQyxDQUFDO1NBQzlEO0lBQ0gsQ0FBQztDQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGlzIGFic3RyYWN0IGNsYXNzIHVzZWQgZm9yIG1vZHVsZSBidWlsZGluZyBieSBleHRlbmRpbmcgdGhpcyBjbGFzc1xuICogcHJldmVudHMgaW1wb3J0aW5nIHRoZSBtb2R1bGUgaW50byBzb21ld2hlcmUgZWxzZSB0aGFuIHJvb3QgQXBwIE1vZHVsZS5cbiAqL1xuZXhwb3J0IGFic3RyYWN0IGNsYXNzIEVuc3VyZUltcG9ydGVkT25jZU1vZHVsZSB7XG4gIHByb3RlY3RlZCBjb25zdHJ1Y3Rvcih0YXJnZXRNb2R1bGU6IGFueSkge1xuICAgIGlmICh0YXJnZXRNb2R1bGUpIHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgJHt0YXJnZXRNb2R1bGUuY29uc3RydWN0b3IubmFtZX0gaGFzIGFscmVhZHkgYmVlbiBsb2FkZWQuXG4gICAgICBZb3Ugc2hvdWxkIG9ubHkgaW1wb3J0IENvcmUgbW9kdWxlcyBpbiB0aGUgQXBwTW9kdWxlIG9ubHkuYCk7XG4gICAgfVxuICB9XG59XG4iXX0=

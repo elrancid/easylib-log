@@ -1,0 +1,23 @@
+{
+  "name": "@easylib/log",
+  "version": "11.0.1",
+  "peerDependencies": {
+    "@angular/common": "~11.0.5",
+    "@angular/core": "~11.0.5",
+    "@easylib/util": "elrancid/easylib-util#^11.0.1",
+    "moment": "^2.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "@easylib/util": "elrancid/easylib-util#^11.0.1",
+    "moment": "^2.0.0"
+  },
+  "main": "bundles/easylib-log.umd.js",
+  "module": "fesm2015/easylib-log.js",
+  "es2015": "fesm2015/easylib-log.js",
+  "esm2015": "esm2015/easylib-log.js",
+  "fesm2015": "fesm2015/easylib-log.js",
+  "typings": "easylib-log.d.ts",
+  "metadata": "easylib-log.metadata.json",
+  "sideEffects": false
+}
